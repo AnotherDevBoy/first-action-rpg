@@ -108,8 +108,6 @@ func on_attack() -> void:
 	play_attack_animation()
 
 func play_attack_animation() -> void:
-	print(current_direction)
-	print("Attack animation")
 	if current_direction == Direction.RIGHT:
 		$AnimatedSprite2D.flip_h = false
 		$AnimatedSprite2D.play("side_attack")
